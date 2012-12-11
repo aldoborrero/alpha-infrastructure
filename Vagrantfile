@@ -31,18 +31,26 @@ Vagrant::Config.run do |config|
   
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
+    chef.roles_path = "roles"
     chef.log_level = :debug
-  
-    chef.add_recipe "apt"
-    chef.add_recipe "git"
     
-    chef.add_recipe "varnish"
+    chef.add_role "base"
+    chef.add_role "cache"
+    chef.add_role "database"
+    chef.add_role "webserver"
     
-    chef.add_recipe "mysql::server"
-    
-    chef.add_recipe "php"
-    chef.add_recipe "php::module_mysql"
-    chef.add_recipe "php::module_apc"
-    chef.add_recipe "php::module_curl"
+    chef.json = {
+      :mysql => {
+        :server_root_password => "123",
+        :server_debian_password => "123",
+        :server_repl_password => "123"
+      },
+      :php => {
+        :conf_dir => "/etc/php5",
+        :directives => {
+          "test" => "test",
+        }
+      }
+    }
   end
 end

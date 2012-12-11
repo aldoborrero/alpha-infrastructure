@@ -3,16 +3,16 @@ description "Base role applied to all nodes."
 
 run_list(
   "recipe[users::sysadmins]",
-  "recipe[sudo]",
+#  "recipe[sudo]",
   "recipe[apt]",
   "recipe[git]",
 )
  
-override_attributes(
-  :authorization => {
-    :sudo => {
-      :users => [ "vagrant" ],
-      :passwordless => true
-    }
-  }
-)
+#override_attributes(
+#  :authorization => {
+#    :sudo => {
+#      :users => [ "vagrant" ],
+#      :passwordless => true
+#    }
+#  }
+#)

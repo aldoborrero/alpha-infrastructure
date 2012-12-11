@@ -3,7 +3,9 @@ description "Web server role."
 
 all_env = [ 
   "role[base]",
+  
   "recipe[nginx]",
+  
   "recipe[php]",
   "recipe[php::module_mysql]",
   "recipe[php::module_apc]",
