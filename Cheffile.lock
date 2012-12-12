@@ -40,12 +40,11 @@ SITE
     zsh (1.0.0)
 
 GIT
-  remote: https://github.com/aldoborrero/chef-solo-search.git
+  remote: https://github.com/aldoborrero/chef-knockd.git
   ref: master
-  sha: 39202490b547e156484fe099e62fcacad5aa3b5d
+  sha: 78f4aa5874cf2b66cb28083af16a3845adc8b624
   specs:
-    knockd (0.4.0)
-    solo-search (0.4.0)
+    knockd (0.0.1)
 
 DEPENDENCIES
   apt (>= 0)
@@ -57,7 +56,6 @@ DEPENDENCIES
   mysql (>= 0)
   openssh (>= 0)
   php (>= 0)
-  solo-search (>= 0)
   sudo (>= 0)
   users (>= 0)
   varnish (>= 0)

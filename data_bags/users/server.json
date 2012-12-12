@@ -1,0 +1,8 @@
+{
+  "id": "server",
+  "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIhW+dvggo+F2jbNANU5yUBfC2pGeCF999xKYaYaLJYcPLU4uasAyokwbMboqz5yQkQ2Xz/Qdpioh2tRHsgmB+42mCwIE2ZnEBTjhyKzsv5Am9eCO2upD56V52ha83fbAR4R43ZuVUbrTl/AWMoG3L9My7cPsSKBYunfn98PQMw68VN6BsPDvCXpZpLl7JDWmGEzCBHW1r5iKlQeguyhy4BvYsnLYGlElceBNIubZc+2nLwDKoxfRDFLlvIg4ksxiQy/kwgLMTsQtV4Sadylqc7/LrTDuK7Pc5CRYJY1l7SJQNVN9Kvnqg1nCVT5RbHYDmlm2aGkWUUY8GRRryE7UT aldo@aldoborrero <Alpha Server Key>",
+  "groups": [ "sysadmins" ],
+  "uid": 2004,
+  "shell": "\/bin\/bash",
+  "comment": "Server account"
+}
