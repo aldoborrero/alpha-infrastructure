@@ -7,6 +7,7 @@ Vagrant::Config.run do |config|
   config.vm.host_name = 'alpha-vm'
   config.vm.network :bridged
   
+  # Comment this or adapt it to your chef-server settings
   config.vm.provision :chef_client do |chef|
     ORGNAME = "kmiin"
     
@@ -30,6 +31,7 @@ Vagrant::Config.run do |config|
     chef.add_role "webserver"
   end
   
+  # Comment above and uncomment this to use chef-solo
   # config.vm.provision :chef_solo do |chef|
   #     chef.cookbooks_path = "cookbooks"
   #     chef.roles_path = "roles"
